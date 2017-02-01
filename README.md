@@ -1,2 +1,0 @@
-# Testing
-Swing tests
