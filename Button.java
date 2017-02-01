@@ -3,39 +3,29 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Button extends JButton implements ActionListener{
-	
-	private String buttonText="";
-	private Color backC, fronC;
-	private int bx,by,bwidth,bheight;
-	private int default_x, default_y=20;
-	
+	private int default_x, default_y = 20;
+		
 	
 	
 	public Button(){
-		this.setSize(default_x, default_y);
+		this.setPreferredSize(new Dimension(default_x, default_y));
 		this.setActionListener();
 	}
 	public Button(int a, int b){
-		this.bx = a;
-		this.by = b;
-		this.setPreferredSize(new Dimension(bx,by));
+		this.setPreferredSize(new Dimension(a,b));
 	}
 	public Button(String s){
 		this.setText(s);
 	}
 	public Button(String s, int a, int b){
-		this.bx = a;
-		this.by = b;
 		this.setText(s);
-		this.setPreferredSize(new Dimension(bx,by));
+		this.setPreferredSize(new Dimension(a,b));
 	}
 
 	
 	public void setColor(Color foreground, Color background){
 		this.setBackground(background);
 		this.setForeground(foreground);
-		this.backC = background;
-		this.fronC = foreground;
 	}
 
 	
