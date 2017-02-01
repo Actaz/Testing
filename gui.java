@@ -2,12 +2,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class test4 extends JFrame implements ActionListener{
+public class gui extends JFrame implements ActionListener{
 	
 	private JButton b1;
 	
 	
-	public test4(){
+	public gui(){
 		createView();
 	
 		setTitle("Click me");
@@ -86,7 +86,7 @@ public class test4 extends JFrame implements ActionListener{
 		SwingUtilities.invokeLater(new Runnable(){
 			@Override
 			public void run(){
-				new test4().setVisible(true);;
+				new gui().setVisible(true);;
 			}
 		});
 	}
