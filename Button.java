@@ -57,15 +57,17 @@ public class Button extends JButton implements ActionListener, PropertyChangeLis
 	@Override
 	public void  actionPerformed(ActionEvent e){
 		System.out.println("bang");
-		super.setBackground(Color.GREEN);
-		super.setBackground(Color.GREEN);
-		super.setBackground(Color.GREEN);
-		super.setBackground(Color.GREEN);
+		if (this.getBackground().equals(Color.GREEN))
+			super.setBackground(Color.BLACK);
+		else super.setBackground(Color.GREEN);
 	}
 
 	@Override
 	public void propertyChange(PropertyChangeEvent arg0) {
+		if (this.getBackground().equals(Color.GREEN))
 		System.out.println("bangbang");
+		else if (this.getBackground().equals(Color.BLACK))
+			System.out.println("BLACK");
 	}
 }
 
