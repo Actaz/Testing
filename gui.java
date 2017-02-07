@@ -34,7 +34,7 @@ public class gui extends JFrame implements ActionListener{
 				east.add(new JButton("hello1"),d);
 				d.gridy = 1;
 				d.gridx = 0;
-				east.add(new Button("BANG",100,100),d);
+				east.add(new Button("BANG"),d);
 				d.gridy = 2;
 				d.gridx = 0;
 				east.add(new JButton("hello3"),d);
